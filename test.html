@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css">
-    <title>GiTest</title>
+    <title>GiTest - Testing</title>
 </head>
 <body class="bg-light">
     <!-- Header Section -->
@@ -18,7 +18,9 @@
         <div class="jumbotron jumbotron-fluid bg-dark text-white border-bottom border-warning">
             <div class="container">
               <h1 class="display-4 text-warning"><strong class="text-white">Git</strong>est <span class="fas fa-check-double"></span></h1>
-              <p class="lead">Test and improve your knowledge about the foundations of Git and GitHub. <h5 class="font-weight-bolder text-warning">Are you ready for this challenge?.</h5></p>
+              <p class="lead">
+                <h2 class="text-warning">Testing your knowledge</h2>
+              </p>
             </div>
           </div>
     </header>
@@ -27,36 +29,39 @@
     <main>
         <div class="container text-center">
             <p class="text-justify">
-                Git, is a piece of technology designed to track and record changes and alterations in any type of computer files, 
-                especially when it comes to those files that are used by more than one or two people (For example, a company). 
-                In other words, companies use Git to manage their work flow and track the progress of several different projects. 
-                The technology is used primarily in software engineering, but many companies around the world, who have nothing 
-                to do with software, have incorporated Git into their workflow. It is especially popular (and even important) for 
-                developers and programmers, as well as being one of the most essential tools for companies striving to achieve and 
-                maintain the DevOps philosophy.
-            </p>
-
-            <p class="text-justify">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="card border-warning m-2">
                     <div class="card-body">
-                      <h5 class="card-title">Git Test <span class="fas fa-check-double text-warning"></span></h5>
-                      <p class="card-text">Answer 15 questions and test your knowledge about Git. Random questions</p>
-                      <button type="button" class="btn btn-warning btn-lg px-5 font-weight-bolder">Start</button>
+                      <h5 class="card-title font-weight-bolder">Question <span id="qNum"></span> / 15</h5>
+                      <p class="card-text">
+                        <span class="question"></span>
+                      </p>
+                      
                     </div>
                   </div>
                 </div>
+
                 <div class="col-sm-6">
                   <div class="card border-primary m-2">
                     <div class="card-body">
-                      <h5 class="card-title">Git Challenge <span class="fas fa-check-double text-primary"></span></h5>
-                      <p class="card-text">Answer the most questions correctly and challenge your limits by answering the 100 questions about Git.</p>
-                      <button type="button" class="btn btn-primary btn-lg px-5 font-weight-bolder">Start</button>
+                      <h5 class="card-title font-weight-bolder">Answers</h5>
+                      <p class="card-text">
+                        <div class="options">
+                          <div id="0" class="option1" onclick="check(this)"></div>
+                          <div id="1" class="option2" onclick="check(this)"></div>
+                          <div id="2" class="option3" onclick="check(this)"></div>
+                          <div id="3" class="option4" onclick="check(this)"></div>
+                       </div>
+                      </p>
+                      
                     </div>
                   </div>
                 </div>
               </div>
+            </p>
+            <p>
+              <button type="button" class="btn btn-warning btn-lg px-5 font-weight-bolder">Start</button>
             </p>
            
         </div>
@@ -122,5 +127,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="test.js"></script>
 </body>
 </html>
