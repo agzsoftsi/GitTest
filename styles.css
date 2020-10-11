@@ -1,0 +1,9 @@
+footer a .social{
+   color: white; 
+   font-size: 1.8rem;
+}
+
+footer a:hover .social{
+    color: gold; 
+    font-size: 1.8rem;
+ }
